@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Details</title>
+</head>
+
+<body>
+
+    <form id="studentForm" onsubmit="return formSubmit(this)">
+
+
+        <table>
+            <tr>
+                <td><label>Name : </label></td>
+                <td><input type="text" id="txtname" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Maths : </label></td>
+                <td><input type="number" id="txtmaths" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label>English : </label></td>
+                <td><input type="number" id="txtenglish" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <td><label>Year of Passing : </label></td>
+                <td><input type="number" min="2000" max="2020" value="2020" id="txtyear" required></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="Save"></td>
+                <td align="center"><input type="reset" value="Clear"></td>
+            </tr>
+        </table>
+
+
+
+
+    </form>
+
+    <fieldset style="width: 500px;">
+        <legend>Student Details</legend>
+        <table style="border: 1px solid;" border="1">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Maths</th>
+                <th>English</th>
+                <th>Avg</th>
+                <th>Year of Passing</th>
+                <th>Date</th>
+
+            </tr>
+            <tbody id="row"></tbody>
+        </table>
+        <center><input type="button" onclick="clearData()" value="Clear"></center>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+
+</html>
